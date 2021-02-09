@@ -1,0 +1,220 @@
+Info 0    [19:32:39.152] Starting TS Server
+Info 1    [19:32:39.153] Version: 3.7.5
+Info 2    [19:32:39.153] Arguments: /usr/bin/node /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/node_modules/.bin/tsserver --logFile /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/f68a3e3f009569a5769375601dff541a/tscancellation*
+Info 3    [19:32:39.153] Platform: linux NodeVersion: 12 CaseSensitive: true
+Info 4    [19:32:39.164] Search path: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src
+Info 5    [19:32:39.165] For info: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts :: Config file name: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 6    [19:32:39.165] Opened configuration file /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 7    [19:32:39.182] Config: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json : {
+ "rootNames": [
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/utils.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/completionWatcher.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/logger.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/paster.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/tikzpreview.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/typeFinder.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/wordCounter.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/components/zotero.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/providers/macroDefinitions.ts",
+  "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/providers/tikzcodelense.ts"
+ ],
+ "options": {
+  "alwaysStrict": true,
+  "forceConsistentCasingInFileNames": true,
+  "lib": [
+   "lib.es2018.d.ts"
+  ],
+  "module": 1,
+  "noFallthroughCasesInSwitch": true,
+  "noImplicitAny": true,
+  "noImplicitReturns": true,
+  "noImplicitThis": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "outDir": "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/out",
+  "rootDir": "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities",
+  "sourceMap": true,
+  "strictBindCallApply": true,
+  "strictFunctionTypes": true,
+  "strictNullChecks": true,
+  "strictPropertyInitialization": true,
+  "target": 5,
+  "baseUrl": "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities",
+  "typeRoots": [
+   "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/types",
+   "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/node_modules/@types"
+  ],
+  "configFilePath": "/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json"
+ }
+}
+Info 8    [19:32:39.217] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 9    [19:32:41.182] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 1 structureChanged: true Elapsed: 1965ms
+Info 10   [19:32:41.183] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 11   [19:32:41.183] 	Files (135)
+
+Info 12   [19:32:41.183] -----------------------------------------------
+Info 13   [19:32:50.158] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 14   [19:32:50.175] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 2 structureChanged: false Elapsed: 17ms
+Info 15   [19:32:50.175] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 16   [19:32:50.583] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 17   [19:32:50.593] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 3 structureChanged: false Elapsed: 10ms
+Info 18   [19:32:50.594] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 19   [19:32:51.901] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 20   [19:32:51.902] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 21   [19:32:51.902] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 22   [19:32:51.926] Elapsed:: 24ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 23   [19:32:52.138] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 24   [19:32:52.176] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 4 structureChanged: true Elapsed: 38ms
+Info 25   [19:32:52.176] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 26   [19:32:52.176] 	Files (136)
+
+Info 27   [19:32:52.176] -----------------------------------------------
+Info 28   [19:32:52.177] Structure before ensureProjectForOpenFiles:
+Info 29   [19:32:52.177] Structure after ensureProjectForOpenFiles:
+Info 30   [19:32:52.177] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 31   [19:32:56.77] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 32   [19:32:56.77] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js
+Info 33   [19:32:56.77] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 34   [19:32:56.77] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 35   [19:32:56.102] Elapsed:: 25ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 36   [19:32:56.116] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 37   [19:32:56.117] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js
+Info 38   [19:32:56.117] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 39   [19:32:56.117] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 40   [19:32:56.135] Elapsed:: 18ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 41   [19:32:56.135] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 42   [19:32:56.136] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 43   [19:32:56.136] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 44   [19:32:56.153] Elapsed:: 17ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 45   [19:32:56.389] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 46   [19:32:56.416] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 5 structureChanged: true Elapsed: 27ms
+Info 47   [19:32:56.417] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 48   [19:32:56.417] 	Files (135)
+
+Info 49   [19:32:56.417] -----------------------------------------------
+Info 50   [19:32:56.417] Structure before ensureProjectForOpenFiles:
+Info 51   [19:32:56.417] Structure after ensureProjectForOpenFiles:
+Info 52   [19:32:56.417] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 53   [19:32:56.576] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 54   [19:32:56.576] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 55   [19:32:56.576] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 56   [19:32:56.593] Elapsed:: 17ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 57   [19:32:56.673] FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts 500 Project:  WatchType: Closed Script info
+Info 58   [19:32:56.674] Elapsed:: 1ms FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_GJu2YO.ts 500 Project:  WatchType: Closed Script info
+Info 59   [19:32:56.809] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 60   [19:32:56.839] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 6 structureChanged: true Elapsed: 30ms
+Info 61   [19:32:56.839] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 62   [19:32:56.839] 	Files (136)
+
+Info 63   [19:32:56.839] -----------------------------------------------
+Info 64   [19:32:56.840] Structure before ensureProjectForOpenFiles:
+Info 65   [19:32:56.840] Structure after ensureProjectForOpenFiles:
+Info 66   [19:32:56.840] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 67   [19:32:59.59] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 68   [19:32:59.60] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js
+Info 69   [19:32:59.60] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 70   [19:32:59.60] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 71   [19:32:59.79] Elapsed:: 19ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 72   [19:32:59.98] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 73   [19:32:59.99] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js
+Info 74   [19:32:59.99] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 75   [19:32:59.99] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 76   [19:32:59.118] Elapsed:: 19ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 77   [19:32:59.118] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 78   [19:32:59.118] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 79   [19:32:59.118] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 80   [19:32:59.135] Elapsed:: 17ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 81   [19:32:59.174] FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts 500 Project:  WatchType: Closed Script info
+Info 82   [19:32:59.176] Elapsed:: 1ms FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_OF1mit.ts 500 Project:  WatchType: Closed Script info
+Info 83   [19:32:59.430] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 84   [19:32:59.456] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 7 structureChanged: true Elapsed: 26ms
+Info 85   [19:32:59.456] Different program with same set of files:: oldProgram.structureIsReused:: 0
+Info 86   [19:32:59.457] Structure before ensureProjectForOpenFiles:
+Info 87   [19:32:59.457] Structure after ensureProjectForOpenFiles:
+Info 88   [19:32:59.457] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 89   [19:33:0.320] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 90   [19:33:0.321] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 91   [19:33:0.321] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 92   [19:33:0.339] Elapsed:: 18ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 93   [19:33:0.557] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 94   [19:33:0.582] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 8 structureChanged: true Elapsed: 25ms
+Info 95   [19:33:0.582] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 96   [19:33:0.582] 	Files (136)
+
+Info 97   [19:33:0.582] -----------------------------------------------
+Info 98   [19:33:0.583] Structure before ensureProjectForOpenFiles:
+Info 99   [19:33:0.583] Structure after ensureProjectForOpenFiles:
+Info 100  [19:33:0.583] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 101  [19:33:2.822] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 102  [19:33:2.822] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js
+Info 103  [19:33:2.822] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 104  [19:33:2.822] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 105  [19:33:2.840] Elapsed:: 18ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 106  [19:33:2.861] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 107  [19:33:2.861] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js
+Info 108  [19:33:2.861] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 109  [19:33:2.861] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 110  [19:33:2.880] Elapsed:: 19ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 111  [19:33:2.880] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 112  [19:33:2.881] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 113  [19:33:2.881] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 114  [19:33:2.897] Elapsed:: 16ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 115  [19:33:3.133] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 116  [19:33:3.157] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 9 structureChanged: true Elapsed: 23ms
+Info 117  [19:33:3.157] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 118  [19:33:3.157] 	Files (135)
+
+Info 119  [19:33:3.157] -----------------------------------------------
+Info 120  [19:33:3.157] Structure before ensureProjectForOpenFiles:
+Info 121  [19:33:3.157] Structure after ensureProjectForOpenFiles:
+Info 122  [19:33:3.157] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 123  [19:33:4.174] FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts 500 Project:  WatchType: Closed Script info
+Info 124  [19:33:4.174] Elapsed:: 0ms FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_Y4JevP.ts 500 Project:  WatchType: Closed Script info
+Info 125  [19:33:4.483] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 126  [19:33:4.483] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 127  [19:33:4.483] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 128  [19:33:4.502] Elapsed:: 19ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 129  [19:33:4.721] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 130  [19:33:4.744] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 10 structureChanged: true Elapsed: 23ms
+Info 131  [19:33:4.744] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 132  [19:33:4.744] 	Files (136)
+
+Info 133  [19:33:4.744] -----------------------------------------------
+Info 134  [19:33:4.744] Structure before ensureProjectForOpenFiles:
+Info 135  [19:33:4.744] Structure after ensureProjectForOpenFiles:
+Info 136  [19:33:4.744] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 137  [19:33:6.992] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 138  [19:33:6.992] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js
+Info 139  [19:33:6.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 140  [19:33:6.992] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 141  [19:33:7.10] Elapsed:: 18ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 142  [19:33:7.32] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 143  [19:33:7.32] Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Detected file add/remove of non supported extension: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js
+Info 144  [19:33:7.32] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 145  [19:33:7.32] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 146  [19:33:7.52] Elapsed:: 20ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.js :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 147  [19:33:7.52] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 148  [19:33:7.52] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Wild card directory
+Info 149  [19:33:7.52] DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 150  [19:33:7.69] Elapsed:: 17ms DirectoryWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts :: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src 1 Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json WatchType: Failed Lookup Locations
+Info 151  [19:33:7.304] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 152  [19:33:7.323] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 11 structureChanged: true Elapsed: 19ms
+Info 153  [19:33:7.323] Project '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json' (Configured) 
+Info 154  [19:33:7.323] 	Files (135)
+
+Info 155  [19:33:7.323] -----------------------------------------------
+Info 156  [19:33:7.323] Structure before ensureProjectForOpenFiles:
+Info 157  [19:33:7.323] Structure after ensureProjectForOpenFiles:
+Info 158  [19:33:7.323] got projects updated in background, updating diagnostics for /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/main.ts
+Info 159  [19:33:9.175] FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts 500 Project:  WatchType: Closed Script info
+Info 160  [19:33:9.175] Elapsed:: 0ms FileWatcher:: Triggered with /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts 2:: WatchInfo: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/src/qr_KpBhom.ts 500 Project:  WatchType: Closed Script info
+Info 161  [19:33:10.978] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 162  [19:33:10.991] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 12 structureChanged: false Elapsed: 13ms
+Info 163  [19:33:10.991] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 164  [19:33:11.904] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 165  [19:33:11.913] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 13 structureChanged: false Elapsed: 8ms
+Info 166  [19:33:11.913] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 167  [19:33:12.323] Starting updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json
+Info 168  [19:33:12.333] Finishing updateGraphWorker: Project: /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/tsconfig.json Version: 14 structureChanged: false Elapsed: 10ms
+Info 169  [19:33:12.334] Different program with same set of files:: oldProgram.structureIsReused:: 2

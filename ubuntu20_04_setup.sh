@@ -7,7 +7,12 @@ ln -s ~/.dotfiles/.themes ~/.themes
 ln -s ~/.dotfiles/.zshrc ~/.zshrc 
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.vscode ~/.vscode
+
 # Install software
+## Tweaks
+add-apt-repository universe
+apt install gnome-tweak-tool -y
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 apt update
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -

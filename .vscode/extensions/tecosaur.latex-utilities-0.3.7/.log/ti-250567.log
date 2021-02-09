@@ -1,0 +1,18 @@
+[21:9:19.424] Global cache location '/home/tec/.cache/typescript/3.7', safe file path '/home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/node_modules/typescript/lib/typingSafeList.json', types map path /home/tec/Desktop/TEC/Programming/GitHub/latex-utilities/node_modules/typescript/lib/typesMap.json
+[21:9:19.424] Processing cache location '/home/tec/.cache/typescript/3.7'
+[21:9:19.424] Trying to find '/home/tec/.cache/typescript/3.7/package.json'...
+[21:9:19.424] Finished processing cache location '/home/tec/.cache/typescript/3.7'
+[21:9:19.425] Process id: 250576
+[21:9:19.425] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[21:9:19.425] validateDefaultNpmLocation: false
+[21:9:19.425] Npm config file: /home/tec/.cache/typescript/3.7/package.json
+[21:9:19.425] Npm config file: '/home/tec/.cache/typescript/3.7/package.json' is missing, creating new one...
+[21:9:19.426] Updating types-registry npm package...
+[21:9:19.426] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[21:9:21.471]     Succeeded. stdout:
+    + types-registry@0.1.483
+    added 1 package from 1 contributor and audited 1 package in 1.52s
+found 0 vulnerabilities
+
+
+[21:9:21.471] Updated types-registry npm package

@@ -1,0 +1,266 @@
+{
+	"name": "latex-utilities",
+	"displayName": "LaTeX Utilities",
+	"description": "An add-on to LaTeX Workshop that provides some fancy features that are less vital to the basic experience editing a LaTeX document, but can be rather nice to have.",
+	"icon": "icon.png",
+	"version": "0.3.7",
+	"publisher": "tecosaur",
+	"license": "MIT",
+	"homepage": "https://github.com/tecosaur/LaTeX-Utilities",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tecosaur/LaTeX-Utilities.git"
+	},
+	"engines": {
+		"vscode": "^1.45.1"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"latex",
+		"tex",
+		"hint"
+	],
+	"activationEvents": [
+		"onLanguage:tex",
+		"onLanguage:latex",
+		"onLanguage:doctex"
+	],
+	"main": "./out/src/main.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "latex-utilities.editLiveSnippetsFile",
+				"title": "Edit Live Snippets file",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.resetLiveSnippetsFile",
+				"title": "Reset Live Snippets file",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.compareLiveSnippetsFile",
+				"title": "Compare user Live Snippets file to default",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.formattedPaste",
+				"title": "Paste formatted content",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.countWord",
+				"title": "Count words in LaTeX document",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.viewtikzpicture",
+				"title": "View TikzPicture",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.citeZotero",
+				"title": "Cite from Zotero",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.openInZotero",
+				"title": "Open in Zotero",
+				"category": "LaTeX Utilities"
+			},
+			{
+				"command": "latex-utilities.selectWordcountFormat",
+				"title": "Select wordcount format",
+				"category": "LaTeX Utilities"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "ctrl+shift+v",
+				"mac": "cmd+shift+v",
+				"command": "latex-utilities.formattedPaste",
+				"when": "!config.latex-utilities.formattedPaste.useAsDefault && editorTextFocus && editorLangId == 'latex'"
+			},
+			{
+				"key": "ctrl+shift+v",
+				"mac": "cmd+shift+v",
+				"command": "editor.action.clipboardPasteAction",
+				"when": "config.latex-utilities.formattedPaste.useAsDefault && editorTextFocus && editorLangId == 'latex'"
+			},
+			{
+				"key": "ctrl+v",
+				"mac": "cmd+v",
+				"command": "latex-utilities.formattedPaste",
+				"when": "config.latex-utilities.formattedPaste.useAsDefault && editorTextFocus && editorLangId == 'latex'"
+			}
+		],
+		"configuration": {
+			"title": "LaTeX Utils",
+			"properties": {
+				"latex-utilities.formattedPaste.tableColumnType": {
+					"type": "string",
+					"default": "l",
+					"markdownDescription": "Tabular column type to use, e.g. **`l`**/**`r`**/**`c`**…"
+				},
+				"latex-utilities.formattedPaste.tableBooktabsStyle": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Use the booktabs commands `\\toprule`, `\\midrule`, and `\\bottomrule`"
+				},
+				"latex-utilities.formattedPaste.tableHeaderRows": {
+					"type": "integer",
+					"default": 1,
+					"markdownDescription": "Number of header rows to assume. Set to **`0`** to disable."
+				},
+				"latex-utilities.formattedPaste.customTableDelimiter": {
+					"type": "string",
+					"default": "\t",
+					"minLength": 1,
+					"markdownDescription": "A custom delimiter to try for tables (in addition to `\\t`, `,` and `|` which we always try)"
+				},
+				"latex-utilities.formattedPaste.tableDelimiterPrompt": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Whether to be prompted for a custom delimiter if the set table delimiters didn't work"
+				},
+				"latex-utilities.formattedPaste.maxLineLength": {
+					"type": "integer",
+					"default": 80,
+					"markdownDescription": "Try to fit within the given line length"
+				},
+				"latex-utilities.formattedPaste.image.template": {
+					"type": [
+						"string",
+						"array"
+					],
+					"default": "\\includegraphics{${imageFilePath}}",
+					"markdownDescription": "The template to use for pasting the image (use an array for multiline strings), use `${imageFilePath}` to represent the image file. Can also use `${imageFileNameWithoutExt}`"
+				},
+				"latex-utilities.formattedPaste.useAsDefault": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Make `ctrl`+`v` perform a formatted paste, and `ctrl`+`shift`+`v` perform a 'raw' (normal) paste."
+				},
+				"latex-utilities.liveReformat.enabled": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Apply live text replacements to make writing latex maths easier (e.g. `xx` → `\\times`). Also see the command \"Edit Live Snippets File\""
+				},
+				"latex-utilities.countWord.path": {
+					"type": "string",
+					"default": "texcount",
+					"markdownDescription": "Define the location of TeXCount executive file/script.\nThis command will be joint with `latex-utilities.countWord.args` and required arguments to form a complete command of TeXCount."
+				},
+				"latex-utilities.countWord.args": {
+					"type": "array",
+					"default": [],
+					"markdownDescription": "TeXCount arguments to count words in LaTeX document of the entire project from the root file, or the current document.\nArguments must be in separate strings in the array. Additional arguments, i.e., `-merge %DOC%` for the project and the current document path for counting current file will be appended when constructing the command."
+				},
+				"latex-utilities.countWord.format": {
+					"type": "string",
+					"default": "${words} Words",
+					"markdownDescription": "Format of the statusbar item. Set empty (`\"\"`) to disable."
+				},
+				"latex-utilities.message.update.show": {
+					"type": "boolean",
+					"default": "true",
+					"markdownDescription": "Notify you when the extension updates"
+				},
+				"latex-utilities.tikzpreview.enabled": {
+					"type": "boolean",
+					"default": "true",
+					"markdownDescription": "Identify tikzpictures, and add a codelense that allows you to preview them"
+				},
+				"latex-utilities.tikzpreview.preambleContents": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "Set the path of a file containing LaTeX code to be included in the preamble of standalone documents for tikzpicture preview. If the path is relative, it is joined with the root dir."
+				},
+				"latex-utilities.tikzpreview.parseTeXFile": {
+					"type": "boolean",
+					"default": "true",
+					"markdownDescription": "Enable important tikz code in the current TeX file to be included in tikzpreview standalone file."
+				},
+				"latex-utilities.tikzpreview.delay": {
+					"type": "number",
+					"default": 500,
+					"markdownDescription": "Defines the delay in milliseconds to wait after typing stops. Set to 0 to disable."
+				},
+				"latex-utilities.tikzpreview.timeout": {
+					"type": "number",
+					"default": 2000,
+					"markdownDescription": "The first change made after this many milliseconds is ignored."
+				},
+				"latex-utilities.texdef.enabled": {
+					"type": "boolean",
+					"default": "true",
+					"markdownDescription": "Use `texdef` to find definitions for LaTeX macros"
+				},
+				"latex-utilities.zotero.zoteroUrl": {
+					"type": "string",
+					"default": "http://localhost:23119",
+					"markdownDescription": "URL for the Zotero HTTP server"
+				},
+				"latex-utilities.zotero.latexCommand": {
+					"type": "string",
+					"default": "autocite",
+					"markdownDescription": "LaTeX citation command to use (`cite`, `parencite`, `autocite`, etc.)"
+				},
+				"latex-utilities.zotero.citeMethod": {
+					"type": "string",
+					"enum": [
+						"zotero",
+						"vscode"
+					],
+					"enumDescriptions": [
+						"Use the Zotero Cite as you Write popup",
+						"Use a picker within VS Code"
+					],
+					"default": "zotero",
+					"markdownDescription": "Controls how Zotero citations are chosen"
+				}
+			}
+		},
+		"jsonValidation": [
+			{
+				"fileMatch": "latexUtilsLiveSnippets.json",
+				"url": "./resources/liveSnippetSchema.json"
+			}
+		]
+	},
+	"extensionDependencies": [
+		"james-yu.latex-workshop"
+	],
+	"scripts": {
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^8.1.0",
+		"@types/glob": "^7.1.1",
+		"@types/got": "^9.6.11",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^12.12.21",
+		"@types/vscode": "^1.45.1",
+		"@typescript-eslint/eslint-plugin": "^1.13.0",
+		"@typescript-eslint/parser": "^1.13.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^6.2.2",
+		"typescript": "^3.9.2"
+	},
+	"dependencies": {
+		"csv-parser": "^2.3.2",
+		"fs-extra": "^8.1.0",
+		"got": "^10.7.0",
+		"vscode-extension-telemetry": "^0.1.2"
+	},
+	"__metadata": {
+		"id": "e12d8c6b-8d86-4f35-99dc-98aa87a06182",
+		"publisherId": "f613bd20-e84f-4a8e-9e23-54c4bf756f88",
+		"publisherDisplayName": "tecosaur"
+	}
+}
