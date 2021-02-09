@@ -7,6 +7,8 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 # Install software
+## gdebi
+apt install gdebi
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 apt update
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -14,10 +16,10 @@ add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode
 apt update
 apt install code -y
 ## Install anaconda
-wget /tmp/https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
 chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh
-/tmp/Anaconda3-2020.11-Linux-x86_64.sh
+/tmp/Anaconda3-2020.11-Linux-x86_64.sh -b -p 
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.8
@@ -63,5 +65,5 @@ apt install autojump -y
 
 ## Hyper
 wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
-dpkg -i /tmp/hyper_3.0.2_amd64.deb
+gdebi /tmp/hyper_3.0.2_amd64.deb
 
