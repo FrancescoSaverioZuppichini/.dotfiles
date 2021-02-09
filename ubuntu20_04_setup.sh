@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update --fix-missing
 # My config
 ## link your stuff
 ln -s ~/.dotfiles/.icons ~/.icons
@@ -7,8 +8,6 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 # Install software
-## gdebi
-apt install gdebi
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 apt update
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -65,5 +64,9 @@ apt install autojump -y
 
 ## Hyper
 wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
-gdebi /tmp/hyper_3.0.2_amd64.deb
+apt install /tmp/hyper_3.0.2_amd64.deb
 
+## final touch
+apt-get update --fix-missing
+apt-get clean
+apt-get autoremove
