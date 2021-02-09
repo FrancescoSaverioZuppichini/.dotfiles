@@ -1,0 +1,10 @@
+[user]
+	email = zuppif@usi.ch
+	name = Francesco
+	signingKey = ""
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false
