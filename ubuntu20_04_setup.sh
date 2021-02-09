@@ -23,7 +23,7 @@ apt install code -y
 wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
 chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh
-/tmp/Anaconda3-2020.11-Linux-x86_64.sh -b -p 
+/tmp/Anaconda3-2020.11-Linux-x86_64.sh 
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.8
