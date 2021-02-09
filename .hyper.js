@@ -104,7 +104,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: '/usr/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -136,7 +136,7 @@ module.exports = {
 
     // Whether to use the WebGL renderer. Set it to false to use canvas-based
     // rendering (slower, but supports transparent backgrounds)
-    webGLRenderer: true,
+    webGLRenderer: false,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -148,7 +148,11 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-  	'hyperterm-atom-dark'
+    'hyper-one-dark',
+    // 'hyperline',
+    'hyper-active-tab',
+    'hyper-pane',
+    'hyper-search',
   //'hyper-material-theme'
   	//hyper-solarized-dark'
   ],
