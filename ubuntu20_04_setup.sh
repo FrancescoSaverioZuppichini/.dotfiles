@@ -1,4 +1,11 @@
 #!/bin/bash
+# My config
+## link your stuff
+ln -s ~/.dotfiles/.icons ~/.icons
+ln -s ~/.dotfiles/.themes ~/.themes
+ln -s ~/.dotfiles/.zshrc ~/.zshrc 
+ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 # Install software
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 apt update
@@ -43,14 +50,6 @@ apt update
 apt install albert -y
 ## Plank
 apt install plank -y
-## My config
-# link your stuff
-ln -s ~/.dotfiles/.icons ~/.icons
-ln -s ~/.dotfiles/.themes ~/.themes
-ln -s ~/.dotfiles/.zshrc ~/.zshrc 
-ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-
 ## ZSH + OhMyZSH
 apt install zsh -y
 # zsh as default shell
