@@ -71,6 +71,13 @@ sudo apt install albert
 sudo apt install plank
 ```
 
+## [Hyper](https://hyper.is/)
+
+```
+wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
+dpkg -i /tmp/hyper_3.0.2_amd64.deb
+``
+
 ## [VSCode](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)
 
 ```

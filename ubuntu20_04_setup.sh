@@ -61,3 +61,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 apt install autojump
+
+## Hyper
+wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
+dpkg -i /tmp/hyper_3.0.2_amd64.deb
+
