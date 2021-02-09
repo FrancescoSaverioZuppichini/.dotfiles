@@ -89,7 +89,7 @@ apt install code
 ```
 
 ## Docker
-
+ + [docker-compose](https://docs.docker.com/compose/install/)
 ```
 apt-get install \
     apt-transport-https \
