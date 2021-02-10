@@ -119,3 +119,5 @@ else
     fi
 fi
 unset __conda_setup
+
+alias open="nautilus $1"

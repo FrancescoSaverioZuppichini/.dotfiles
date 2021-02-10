@@ -8,7 +8,7 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.vscode ~/.vscode
-ln -s  /home/$USER/.local/share/plank/themes ~/.dotfiles/plank_themes
+ln -s   ~/.dotfiles/plank_themes /home/$USER/.local/share/plank/themes
 
 # Install software
 ## Tweaks
@@ -29,7 +29,7 @@ chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh
 source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.8
 conda activate dl
-pip install -R requirements.txt
+pip install -r requirements.txt
 ## install docker
 apt-get install \
     apt-transport-https \
