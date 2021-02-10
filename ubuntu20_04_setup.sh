@@ -12,14 +12,16 @@ ln -s   ~/.dotfiles/plank_themes /home/$USER/.local/share/plank/themes
 
 # Install software
 ## Tweaks
-add-apt-repository universe
+add-apt-repository universe -y
 apt install gnome-tweak-tool -y
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 apt update
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -y
 apt update
 apt install code -y
+## gcc
+apt install gcc -y
 ## Install anaconda
 wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
@@ -41,7 +43,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
-   stable"
+   stable" -y
 apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io -y
 # to verify run sudo docker run hello-world
@@ -72,6 +74,16 @@ apt install autojump -y
 wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
 apt install /tmp/hyper_3.0.2_amd64.deb
 
+## OBS
+
+apt install ffmpeg -y
+
+add-apt-repository ppa:obsproject/obs-studio -y
+apt update
+apt install obs-studio -y
+
+## ImageMagic
+apt-get install imagemagick -y
 ## final touch
 apt-get update --fix-missing
 apt-get clean

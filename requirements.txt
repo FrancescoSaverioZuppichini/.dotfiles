@@ -3,7 +3,6 @@ scikit_image
 opencv_python_headless
 streamlit
 jupyter
-jupyterlab
 matplotlib
 pandas
 numpy
@@ -23,9 +22,8 @@ timm
 fastapi
 segmentation_models_pytorch
 mlflow
-pydicom
-medpy
 redis
 pypeln
 comet_ml
 einops
+gpustat

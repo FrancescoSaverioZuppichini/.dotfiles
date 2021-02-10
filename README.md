@@ -171,6 +171,12 @@ sudo apt update
 sudo apt install brave-browser
 ```
 
+## [ImageMagick](https://blog.gregzaal.com/install-imagemagick/)
+
+```
+apt-get install imagemagick -y
+```
+
 ## Symbolic links
 
 Different files are symbolically linked to my ~ 
