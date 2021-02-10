@@ -160,6 +160,7 @@ sudo apt-get update
 sudo apt-get install insomnia
 ```
 
+
 ## Node.js
 
 Releases from [here](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
@@ -168,10 +169,6 @@ Releases from [here](https://github.com/nodesource/distributions/blob/master/REA
 # Using Ubuntu
 curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
-# Using Debian, as root
-curl -sL https://deb.nodesource.com/setup_15.x | bash -
-apt-get install -y nodejs
 ```
 
 ## [Brave](https://brave.com/linux/)
@@ -191,7 +188,7 @@ sudo apt install brave-browser
 ## [ImageMagick](https://blog.gregzaal.com/install-imagemagick/)
 
 ```
-apt-get install imagemagick -y
+sudo apt-get install imagemagick -y
 ```
 
 ## Symbolic links
