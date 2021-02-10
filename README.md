@@ -8,7 +8,7 @@ git clone https://github.com/FrancescoSaverioZuppichini/.dotfiles.git
 
 cd .dotfiles
 chmod 755 ./ubuntu20_04_setup.sh
-sudo ./ubuntu20_04_setup.sh
+./ubuntu20_04_setup.sh
 ```
 
 # Packages
