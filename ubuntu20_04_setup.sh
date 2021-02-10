@@ -22,6 +22,7 @@ apt update
 apt install code -y
 ## gcc
 apt install gcc -y
+apt install build-essential -y
 ## Install anaconda
 wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
@@ -81,6 +82,9 @@ apt install ffmpeg -y
 add-apt-repository ppa:obsproject/obs-studio -y
 apt update
 apt install obs-studio -y
+
+## shell extensions
+apt install gnome-shell-extensions -y
 
 ## ImageMagic
 apt-get install imagemagick -y
