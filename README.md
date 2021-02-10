@@ -76,7 +76,7 @@ sudo apt install plank
 ```
 wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
 dpkg -i /tmp/hyper_3.0.2_amd64.deb
-``
+```
 
 ## [VSCode](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)
 
@@ -89,7 +89,9 @@ apt install code
 ```
 
 ## Docker
- + [docker-compose](https://docs.docker.com/compose/install/)
+
+[docker-compose](https://docs.docker.com/compose/install/)
+
 ```
 apt-get install \
     apt-transport-https \
@@ -124,3 +126,53 @@ conda create -n dl python=3.8
 conda activate dl
 pip install -R requirements.txt
 ```
+
+## [Insomnia](https://insomnia.rest/)
+
+```
+# Add to sources
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+
+# Add public key used to verify code signature
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+    | sudo apt-key add -
+
+# Refresh repository sources and install Insomnia
+sudo apt-get update
+sudo apt-get install insomnia
+```
+
+## Node.js
+
+Releases from [here](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+
+```
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Using Debian, as root
+curl -sL https://deb.nodesource.com/setup_15.x | bash -
+apt-get install -y nodejs
+```
+
+## [Brave](https://brave.com/linux/)
+
+```
+sudo apt install apt-transport-https curl gnupg
+
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser
+```
+
+## Symbolic links
+
+Different files are symbolically linked to my ~ 
+
+[here](https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout) there is a nice explanation about each file in the `zsh` ecosystem.

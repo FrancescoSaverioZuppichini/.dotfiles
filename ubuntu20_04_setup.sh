@@ -8,6 +8,7 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.vscode ~/.vscode
+ln -s  /home/$USER/.local/share/plank/themes ~/.dotfiles/plank_themes
 
 # Install software
 ## Tweaks
