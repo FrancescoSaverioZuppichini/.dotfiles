@@ -20,6 +20,15 @@ sudo apt upgrade
 
 # NVIDIA Shit
 
+First disable nouveau
+
+```
+sudo bash -c "echo blacklist nouveau > /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
+sudo bash -c "echo options nouveau modeset=0 >> /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
+
+sudo reboot
+```
+
 Get [Cuda 11](https://developer.nvidia.com/cuda-11.0-download-archive)
 
 You need to manually install a driver [`>=450.6`](https://www.nvidia.com/download/driverResults.aspx/162107/en-us)
