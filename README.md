@@ -18,6 +18,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
+# NVIDIA Shit
+
+Get [Cuda 11](https://developer.nvidia.com/cuda-11.0-download-archive)
+
+You need to manually install a driver [`>=450.6`](https://www.nvidia.com/download/driverResults.aspx/162107/en-us)
+
 ## [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```
