@@ -17,7 +17,7 @@ sudo apt install build-essential -y
 sudo wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
 sudo chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh 
-sudo /tmp/Anaconda3-2020.11-Linux-x86_64.sh -b -p $HOME/anaconda3
+/tmp/Anaconda3-2020.11-Linux-x86_64.sh -b -p $HOME/anaconda3
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.8 -y
@@ -64,7 +64,7 @@ sudo apt install autojump -y
 
 ## Hyper
 sudo wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
-sudo apt install /tmp/hyper_3.0.2_amd64.deb
+sudo apt install /tmp/hyper_3.0.2_amd64.deb -y
 
 ## OBS
 

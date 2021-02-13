@@ -168,10 +168,6 @@ Releases from [here](https://github.com/nodesource/distributions/blob/master/REA
 # Using Ubuntu
 curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
-# Using Debian, as root
-curl -sL https://deb.nodesource.com/setup_15.x | bash -
-apt-get install -y nodejs
 ```
 
 ## [Brave](https://brave.com/linux/)
@@ -191,7 +187,7 @@ sudo apt install brave-browser
 ## [ImageMagick](https://blog.gregzaal.com/install-imagemagick/)
 
 ```
-apt-get install imagemagick -y
+sudo apt-get install imagemagick -y
 ```
 
 ## Symbolic links
@@ -199,3 +195,18 @@ apt-get install imagemagick -y
 Different files are symbolically linked to my ~ 
 
 [here](https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout) there is a nice explanation about each file in the `zsh` ecosystem.
+
+
+## Python
+
+### [Rich](https://github.com/willmcgugan/rich)
+
+Supercharge your stacktrace
+
+```
+pip install rich
+cd $(python -c 'import site; print(site.getsitepackages()[0])')
+mkdir sitecustomize  
+cd sitecustomize 
+echo "from rich.traceback import install\ninstall()" >> __init__.py
+```

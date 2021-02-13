@@ -27,3 +27,4 @@ pypeln
 comet_ml
 einops
 gpustat
+rich
