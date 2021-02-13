@@ -8,7 +8,7 @@ git clone https://github.com/FrancescoSaverioZuppichini/.dotfiles.git
 
 cd .dotfiles
 chmod 755 ./ubuntu20_04_setup.sh
-sudo ./ubuntu20_04_setup.sh
+./ubuntu20_04_setup.sh
 ```
 
 # Packages
@@ -159,6 +159,7 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
 sudo apt-get update
 sudo apt-get install insomnia
 ```
+
 
 ## Node.js
 
