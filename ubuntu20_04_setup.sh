@@ -76,7 +76,8 @@ sudo apt install obs-studio -y
 
 ## shell extensions
 sudo apt install gnome-shell-extensions -y
-
+## neofetch
+apt install neofetch -y
 ## ImageMagic
 sudo apt-get install imagemagick -y
 ## final touch

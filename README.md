@@ -8,7 +8,7 @@ git clone https://github.com/FrancescoSaverioZuppichini/.dotfiles.git
 
 cd .dotfiles
 chmod 755 ./ubuntu20_04_setup.sh
-./ubuntu20_04_setup.sh
+sudo ./ubuntu20_04_setup.sh
 ```
 
 # Packages
@@ -68,6 +68,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo apt install autojump
 ```
 
+## [NeoFetch](https://github.com/dylanaraps/neofetch)
+
+```
+sudo apt install neofetch
+```
 # Additional software
 ## Ubuntu 20.04
 ### [Albert](https://albertlauncher.github.io/installing/)
@@ -159,7 +164,6 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
 sudo apt-get update
 sudo apt-get install insomnia
 ```
-
 
 ## Node.js
 
