@@ -1,6 +1,6 @@
 [user]
-	email = zuppif@usi.ch
-	name = Francesco
+	email = francesco.zuppichini@gmail.com
+	name = fra
 	signingKey = ""
 [gpg]
 	program = gpg
@@ -8,3 +8,5 @@
 	gpgSign = false
 [tag]
 	forceSignAnnotated = false
+[credential]
+	helper = store
