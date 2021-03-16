@@ -122,4 +122,3 @@ unset __conda_setup
 
 alias open="nautilus $1"
 
-export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
