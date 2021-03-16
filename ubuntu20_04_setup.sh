@@ -97,4 +97,5 @@ rm  -f ~/.gitconfig
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 rm -f -R ~/.vscode
 ln -s ~/.dotfiles/.vscode ~/.vscode
+ln -s ~/.dotfiles/.zprofile ~/.zprofile
 # ln -s   ~/.dotfiles/plank_themes /home/$USER/.local/share/plank/themes
