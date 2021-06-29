@@ -1,0 +1,77 @@
+#marp-vscode {
+  all: initial;
+}
+
+/* Override VS Code default CSS rules reverting to initial
+   https://github.com/microsoft/vscode/blob/master/src/vs/workbench/contrib/webview/browser/pre/main.js#L53 */
+body.marp-vscode {
+  padding: 0;
+}
+
+body.marp-vscode img {
+  max-width: unset;
+  max-height: unset;
+}
+
+body.marp-vscode a,
+body.marp-vscode a:hover,
+body.marp-vscode code {
+  color: unset;
+}
+
+body.marp-vscode blockquote {
+  background: unset;
+  border-color: unset;
+}
+
+@media screen {
+  body.marp-vscode {
+    overflow-y: scroll;
+  }
+
+  #marp-vscode svg[data-marpit-svg] {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: 20px;
+  }
+
+  #marp-vscode[data-polyfill] svg[data-marpit-svg] > foreignobject > section {
+    /* Workaround for wrong hit area caused by Chromium's rendering bug */
+    overflow: visible;
+  }
+
+  /* Based on https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+  #code-csp-warning {
+    background-color: #444;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 16px;
+    padding: 6px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    word-wrap: break-word;
+  }
+
+  #code-csp-warning:hover {
+    text-decoration: none;
+    background-color: #007acc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media print {
+  body.marp-vscode #code-csp-warning {
+    display: none;
+  }
+
+  #marp-vscode[data-polyfill] svg[data-marpit-svg] > foreignobject > section {
+    /* Disable WebKit polyfill */
+    transform: none !important;
+  }
+}

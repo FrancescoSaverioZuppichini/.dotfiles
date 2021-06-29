@@ -122,4 +122,4 @@ unset __conda_setup
 
 alias open="nautilus $1"
 
-alias bitcoin-cli="docker run -it --rm --network host kylemanna/bitcoind bitcoin-cli -testnet -rpcuser=root -rpcpassword=bitcoin"
+alias bitcoin-cli="docker run -it --rm --network host kylemanna/bitcoind bitcoin-cli  -rpcuser=root -rpcpassword=bitcoin"
