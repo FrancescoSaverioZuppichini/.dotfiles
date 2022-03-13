@@ -96,8 +96,8 @@ sudo apt install plank
 ## [Hyper](https://hyper.is/)
 
 ```
-wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
-dpkg -i /tmp/hyper_3.0.2_amd64.deb
+wget -O /tmp/hyper_amd64.deb https://releases.hyper.is/download/deb
+dpkg -i /tmp/hyper_amd64.deb
 ```
 
 ## [VSCode](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)
@@ -140,9 +140,9 @@ chmod +x /usr/local/bin/docker-compose
 ## Anaconda
 
 ```
-wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
-# sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
-chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh
+wget -O /tmp/Anaconda3-2021.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh
+# sha256sum Anaconda3-2021.11-Linux-x86_64.sh 
+chmod 755 /tmp/Anaconda3-2021.11-Linux-x86_64.sh
 /tmp/Anaconda3-2020.11-Linux-x86_64.sh 
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
@@ -173,7 +173,7 @@ Releases from [here](https://github.com/nodesource/distributions/blob/master/REA
 
 ```
 # Using Ubuntu
-curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
@@ -203,6 +203,21 @@ Different files are symbolically linked to my ~
 
 [here](https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout) there is a nice explanation about each file in the `zsh` ecosystem.
 
+## [Bat](https://github.com/sharkdp/bat
+
+A cat(1) clone with wings.
+
+```
+sudo apt install bat
+
+```
+
+`bat` clash with another package, let's fix it
+
+```
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
 
 ## Python
 

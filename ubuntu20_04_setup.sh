@@ -20,9 +20,14 @@ sudo chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh
 /tmp/Anaconda3-2020.11-Linux-x86_64.sh -b -p $HOME/anaconda3
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
-conda create -n dl python=3.8 -y
+conda create -n dl python=3.9 -y
 conda activate dl
 pip install -r requirements.txt
+cd $(python -c 'import site; print(site.getsitepackages()[0])')
+mkdir sitecustomize  
+cd sitecustomize 
+echo "from rich.traceback import install\ninstall()" >> __init__.py
+# install rich && stack trace
 # install docker
 sudo apt-get install \
     apt-transport-https \
@@ -63,8 +68,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo apt install autojump -y
 
 ## Hyper
-sudo wget -O /tmp/hyper_3.0.2_amd64.deb https://releases.hyper.is/download/deb
-sudo apt install /tmp/hyper_3.0.2_amd64.deb -y
+sudo wget -O /tmp/hyper_amd64.deb https://releases.hyper.is/download/deb
+sudo apt install /tmp/hyper_amd64.deb -y
 
 ## OBS
 
@@ -93,9 +98,9 @@ rm -f ~/.zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc 
 rm -f ~/.hyper.js 
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js 
-rm  -f ~/.gitconfig
+rm -f ~/.gitconfig
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 rm -f -R ~/.vscode
 ln -s ~/.dotfiles/.vscode ~/.vscode
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
-# ln -s   ~/.dotfiles/plank_themes /home/$USER/.local/share/plank/themes
+ln -s   ~/.dotfiles/plank_themes ~/.local/share/plank/themes
