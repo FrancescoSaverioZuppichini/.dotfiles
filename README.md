@@ -31,9 +31,22 @@ sudo reboot
 
 Get [Cuda 11](https://developer.nvidia.com/cuda-11.0-download-archive)
 
+
+```
+wget https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run
+sudo sh cuda_11.7.0_515.43.04_linux.run
+```
+
 You need to manually install a driver [`>=450.6`](https://www.nvidia.com/download/driverResults.aspx/162107/en-us)
 
 You can find more drivers [here](https://www.nvidia.com/Download/Find.aspx)
+
+Install latest version of [cudnn](https://developer.nvidia.com/rdp/cudnn-download)
+
+```
+wget https://developer.nvidia.com/compute/cudnn/secure/8.4.1/local_installers/11.6/cudnn-linux-x86_64-8.4.1.50_cuda11.6-archive.tar.xz
+sudo sh cuda_11.7.0_515.43.04_linux.run
+
 
 ## [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
@@ -91,6 +104,7 @@ sudo apt install albert
 
 ```
 sudo apt install plank
+
 ```
 
 ## [Hyper](https://hyper.is/)
@@ -137,6 +151,27 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-
 chmod +x /usr/local/bin/docker-compose
 ```
 
+### [Nvidia Docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
+
+
+```
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+      && curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+      && curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
+            sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+            sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+sudo systemctl restart docker
+```
+
+E.g. 
+
+```
+docker run --gpus all -v /home/zuppif/.../:/workspace --ipc=host --ulimit memlock=-1 --ulimit stack=67108864  -it --rm nvcr.io/nvidia/pytorch:22.06-py3
+```
+
 ## Anaconda
 
 ```
@@ -149,6 +184,14 @@ source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.8
 conda activate dl
 pip install -R requirements.txt
+```
+
+## Pillow simd
+
+```
+conda activate dl
+pip uninstall pillow
+CC="cc -mavx2" pip install -U --force-reinstall pillow-simd
 ```
 
 ## [Insomnia](https://insomnia.rest/)
@@ -173,7 +216,7 @@ Releases from [here](https://github.com/nodesource/distributions/blob/master/REA
 
 ```
 # Using Ubuntu
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
@@ -208,7 +251,7 @@ Different files are symbolically linked to my ~
 A cat(1) clone with wings.
 
 ```
-sudo apt install bat
+sudo apt install bat -y
 
 ```
 
@@ -230,5 +273,5 @@ pip install rich
 cd $(python -c 'import site; print(site.getsitepackages()[0])')
 mkdir sitecustomize  
 cd sitecustomize 
-echo "from rich.traceback import install\ninstall()" >> __init__.py
+echo "from rich.traceback import install\install()" >> __init__.py
 ```

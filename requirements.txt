@@ -18,13 +18,9 @@ imgaug
 torchsummary
 albumentations
 pytorch-lightning
-timm
-fastapi
-segmentation_models_pytorch
 mlflow
 redis
 pypeln
-comet_ml
 einops
 gpustat
 rich

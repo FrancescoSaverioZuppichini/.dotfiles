@@ -13,6 +13,8 @@ sudo apt install code -y
 ## gcc
 sudo apt install gcc -y
 sudo apt install build-essential -y
+# install python 
+sudo apt install python3-pip -y
 # Install anaconda
 sudo wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
@@ -45,7 +47,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 # to verify run sudo docker run hello-world
 sudo usermod -aG docker $USER
 # docker compose https://docs.docker.com/compose/install/
-sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.8.0/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ## install albert
 curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
@@ -104,3 +106,4 @@ rm -f -R ~/.vscode
 ln -s ~/.dotfiles/.vscode ~/.vscode
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s   ~/.dotfiles/plank_themes ~/.local/share/plank/themes
+ln -s ~/.dotfiles/config ~/.config
