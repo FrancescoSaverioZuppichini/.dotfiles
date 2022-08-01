@@ -31,20 +31,26 @@ cd sitecustomize
 echo "from rich.traceback import install\ninstall()" >> __init__.py
 # install rich && stack trace
 # install docker
+# dependencies
 sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
     gnupg-agent \
     software-properties-common
+# add docker key to our package manager
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+# then add their repo
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable" -y
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-# to verify run sudo docker run hello-world
+# finally install it
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+# create the docker group
+sudo groupadd docker
+# add your user to the docker group
 sudo usermod -aG docker $USER
 # docker compose https://docs.docker.com/compose/install/
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.8.0/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose

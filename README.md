@@ -46,7 +46,7 @@ Install latest version of [cudnn](https://developer.nvidia.com/rdp/cudnn-downloa
 ```
 wget https://developer.nvidia.com/compute/cudnn/secure/8.4.1/local_installers/11.6/cudnn-linux-x86_64-8.4.1.50_cuda11.6-archive.tar.xz
 sudo sh cuda_11.7.0_515.43.04_linux.run
-
+```
 
 ## [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
