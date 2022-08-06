@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update --fix-missing
-Install software
+# Install software
 # Tweaks
 sudo add-apt-repository universe -y
 sudo apt install gnome-tweak-tool -y
