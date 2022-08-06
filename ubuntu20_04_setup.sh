@@ -47,7 +47,7 @@ sudo add-apt-repository \
    stable" -y
 sudo apt-get update
 # finally install it
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 # create the docker group
 sudo groupadd docker
 # add your user to the docker group
