@@ -16,10 +16,10 @@ sudo apt install build-essential -y
 # install python 
 sudo apt install python3-pip -y
 # Install anaconda
-sudo wget -O /tmp/Anaconda3-2020.11-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+sudo wget -O /tmp/Anaconda3-2023.09-0-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
-sudo chmod 755 /tmp/Anaconda3-2020.11-Linux-x86_64.sh 
-/tmp/Anaconda3-2020.11-Linux-x86_64.sh -b -p $HOME/anaconda3
+sudo chmod 755 /tmp/Anaconda3-2023.09-0-Linux-x86_644.sh 
+Anaconda3-2023.09-0-Linux-x86_64.sh -b -p $HOME/anaconda3
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.9 -y
