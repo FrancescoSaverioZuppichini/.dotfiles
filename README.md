@@ -273,3 +273,14 @@ mkdir sitecustomize
 cd sitecustomize 
 echo "from rich.traceback import install\install()" >> __init__.py
 ```
+
+
+## Q&A
+### Cannot set `sheel theme`
+Open 
+
+```
+gnome-extensions-app
+```
+
+And you should be able to see `user themes` and you set it from here, otherwise restart gnome with `alt` + `f2` and type `r`

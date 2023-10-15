@@ -3,6 +3,7 @@ sudo apt-get update --fix-missing
 # Install software
 # Tweaks
 sudo apt install gnome-tweaks
+sudo apt install gnome-shell-extensions
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 sudo apt update
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
