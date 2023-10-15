@@ -18,8 +18,8 @@ sudo apt install python3-pip -y
 # Install anaconda
 sudo wget -O /tmp/Anaconda3-2023.09-0-Linux-x86_64.sh https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 # sha256sum Anaconda3-2020.11-Linux-x86_64.sh 
-sudo chmod 755 /tmp/Anaconda3-2023.09-0-Linux-x86_644.sh 
-Anaconda3-2023.09-0-Linux-x86_64.sh -b -p $HOME/anaconda3
+sudo chmod 755 /tmp/Anaconda3-2023.09-0-Linux-x86_64.sh 
+/tmp/Anaconda3-2023.09-0-Linux-x86_64.sh -b -p $HOME/anaconda3
 # create conda env for deep learning (run from current shell)
 source ~/anaconda3/etc/profile.d/conda.sh
 conda create -n dl python=3.9 -y
@@ -31,37 +31,31 @@ cd sitecustomize
 echo "from rich.traceback import install\ninstall()" >> __init__.py
 # install rich && stack trace
 # install docker
-# dependencies
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
-# add docker key to our package manager
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-# then add their repo
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable" -y
+# https://docs.docker.com/engine/install/ubuntu/
+# install deps and docker key
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+# add the repository to apt sources:
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 # finally install it
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 # create the docker group
 sudo groupadd docker
 # add your user to the docker group
 sudo usermod -aG docker $USER
-# docker compose https://docs.docker.com/compose/install/
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.8.0/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+newgrp docker
 ## install albert
-curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
-echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
-wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_23.10/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_23.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
 sudo apt update
-sudo apt install xclip
-sudo apt install albert -y
+sudo apt install albert
 ## Plank
 sudo apt install plank -y
 ## ZSH + OhMyZSH
@@ -112,5 +106,5 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 rm -f -R ~/.vscode
 ln -s ~/.dotfiles/.vscode ~/.vscode
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
-ln -s   ~/.dotfiles/plank_themes ~/.local/share/plank/themes
+ln -s  ~/.dotfiles/plank_themes/* ~/.local/share/plank/themes/
 ln -s ~/.dotfiles/config ~/.config
