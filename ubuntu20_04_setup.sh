@@ -2,8 +2,7 @@
 sudo apt-get update --fix-missing
 # Install software
 # Tweaks
-sudo add-apt-repository universe -y
-sudo apt install gnome-tweak-tool -y
+sudo apt install gnome-tweaks
 ## Install VS code https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 sudo apt update
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
