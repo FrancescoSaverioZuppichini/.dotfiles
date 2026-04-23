@@ -118,8 +118,9 @@ dpkg -i /tmp/hyper_amd64.deb
 
 ```
 mkdir -p ~/.config
-rm -rf ~/.config/ghostty
-ln -s ~/.dotfiles/.ghostty ~/.config/ghostty
+mkdir -p ~/.config/ghostty
+rm -f ~/.config/ghostty/config
+ln -s ~/.dotfiles/.ghostly ~/.config/ghostty/config
 ```
 
 ## [VSCode](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)

@@ -108,5 +108,6 @@ ln -s ~/.dotfiles/.vscode ~/.vscode
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s  ~/.dotfiles/plank_themes/* ~/.local/share/plank/themes/
 mkdir -p ~/.config
-rm -rf ~/.config/ghostty
-ln -s ~/.dotfiles/.ghostty ~/.config/ghostty
+mkdir -p ~/.config/ghostty
+rm -f ~/.config/ghostty/config
+ln -s ~/.dotfiles/.ghostly ~/.config/ghostty/config
