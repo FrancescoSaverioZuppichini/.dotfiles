@@ -109,4 +109,4 @@ ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s  ~/.dotfiles/plank_themes/* ~/.local/share/plank/themes/
 mkdir -p ~/.config
 rm -rf ~/.config/ghostty
-ln -s ~/.dotfiles/config/ghostty ~/.config/ghostty
+ln -s ~/.dotfiles/.ghostty ~/.config/ghostty
