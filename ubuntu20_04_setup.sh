@@ -107,4 +107,6 @@ rm -f -R ~/.vscode
 ln -s ~/.dotfiles/.vscode ~/.vscode
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s  ~/.dotfiles/plank_themes/* ~/.local/share/plank/themes/
-ln -s ~/.dotfiles/config ~/.config
+mkdir -p ~/.config
+rm -rf ~/.config/ghostty
+ln -s ~/.dotfiles/config/ghostty ~/.config/ghostty

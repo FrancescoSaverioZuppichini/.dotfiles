@@ -114,6 +114,14 @@ wget -O /tmp/hyper_amd64.deb https://releases.hyper.is/download/deb
 dpkg -i /tmp/hyper_amd64.deb
 ```
 
+## [Ghostty](https://ghostty.org/docs/install)
+
+```
+mkdir -p ~/.config
+rm -rf ~/.config/ghostty
+ln -s ~/.dotfiles/config/ghostty ~/.config/ghostty
+```
+
 ## [VSCode](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)
 
 ```
